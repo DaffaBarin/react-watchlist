@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #2D107C ; 
+    font-family: "Montserrat";
+    color:white !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 100000;
+}
+
+.navText{
+    color:white;
+    /* font-size: small; */
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.signInText{
+    color:#1D0124;
+    margin-top:5px;
+    font-weight: bold;
+}
+
+.signIn{
+    background-color: #D6C7FF;
+    border-radius: 10px;
+}
+
+.profilePicture{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -5px;
+}

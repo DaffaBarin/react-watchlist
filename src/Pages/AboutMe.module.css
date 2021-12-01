@@ -1,0 +1,28 @@
+*{
+    font-family: "Montserrat";
+}
+
+.container{
+    width: 40%;
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.right{
+    margin-left: 100px;
+}
+.intro{
+    margin-left: 100px;
+    font-weight: bold;
+}
+.punchline{
+    margin-left: 100px;
+}
+.aboutText{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-weight: 500;
+}

@@ -1,0 +1,40 @@
+.bgImg {
+    background-image: url(../Assets/Images/home-bg.svg);
+    height: 100vh;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.homeCard{
+    font-family: "Montserrat";
+    width: 800px;
+    height: 250px;
+    opacity: 0.8;
+    top: 150px;
+    text-align: center;
+    margin:auto;
+    border-radius: 30px !important;
+}
+
+.movieLogo{
+    height: 70px;
+    width: 70px;
+    margin:auto;
+}
+
+.welcomeText{
+    font-weight: bold;
+}
+
+.buttonHome{
+    height: 36px;
+    width: 400px;
+    border: 0px ;
+    border-radius: 10px;
+    background: #2D107C;
+    color: white;
+    font-weight: bold;
+}

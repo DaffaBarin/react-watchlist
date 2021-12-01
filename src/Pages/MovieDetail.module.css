@@ -1,0 +1,38 @@
+*{
+    font-family: "Montserrat";
+}
+.movieDetail{
+    height: 450px;
+    width: 300px;
+
+    object-fit: cover;
+}
+
+.containerWidth{
+    margin-top: 50px;
+    width: 70%;
+}
+
+.movieTitle{
+    font-size: 36px;
+    color: #26004F;
+}
+
+.movieProps{
+    color: #26004F;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.button{
+    color: white;
+    margin-top: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    background-color: #441CAD;
+    border-color: #FFFFFF;
+    width: 337px;
+    height: 36px;
+}
