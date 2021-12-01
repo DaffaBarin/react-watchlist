@@ -12,9 +12,10 @@ function Navbarr() {
     const localUsername = localStorage.getItem("username")
     const localPassword = localStorage.getItem("password")
     let {dataLogin, loadingLogin, errorLogin} = useLogin(localUsername,localPassword);
+    console.log(localUsername === null)
     return (
         <>
-        {!loadingLogin && !errorLogin && <Navbar className={styles["navbar"]} variant="light" expand="lg">
+        {!loadingLogin &&<Navbar className={styles["navbar"]} variant="light" expand="lg">
             <Container>
                 <Navbar.Brand href="/"><img
                         alt=""
@@ -33,7 +34,7 @@ function Navbarr() {
                     <Nav.Link href="/explore"><h5 className={styles["navText"]}>Explore </h5></Nav.Link>
                     <Nav.Link href="/aboutme"><h5 className={styles["navText"]}>About Me </h5></Nav.Link>
                 </Nav>
-                { dataLogin?.user[0] == null &&
+                { localUsername === null &&
                 <Nav>
                     <Nav.Link><h5 className={`${styles["navText"]}`}>Sign Up</h5></Nav.Link>
                     <Nav.Link className={styles["signIn"]} href="/login"><h5 className={`${styles["signInText"]}`}>Sign In</h5></Nav.Link>
@@ -44,7 +45,7 @@ function Navbarr() {
                         /></Nav.Link>
                 </Nav>
                 }
-                { dataLogin.user[0] &&
+                { dataLogin?.user[0] &&
                 <Nav>
                     <Nav.Link href="#link"><h5 className={`${styles["navText"]}`}>Hello, {dataLogin?.user[0].username}!</h5></Nav.Link>
                     <Nav.Link href="#link"><img
